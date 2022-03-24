@@ -2,21 +2,30 @@
 
 List<Alumno> lista = new List<Alumno>();
 
-Alumno alumno1 = new Alumno();
-alumno1.Nombres = "Antonio";
-alumno1.ApellidoPaterno = "Rogel";
-alumno1.Matricula = "123";
-alumno1.FechaNacimiento = DateTime.Now;
+Alumno a1 = new Alumno();
+a1.Nombres = "Roberto";
+a1.ApellidoPaterno = "Martinez";
+a1.Matricula = "300";
+a1.FechaNacimiento = DateTime.Now;
+
+Alumno a2 = new Alumno();
+a2.Nombres = "Pedro";
+a2.ApellidoPaterno = "Aguilar";
+a2.Matricula = "301";
+a2.FechaNacimiento = new DateTime(1980,02,28);
+
+Alumno a3 = new Alumno();
+a3.Nombres = "Sebastian";
+a3.ApellidoPaterno = "Tanori";
+a3.Matricula = "302";
+a3.FechaNacimiento = new DateTime(2003, 09, 01);
+
+lista.Add(a1);
+lista.Add(a2);
+lista.Add(a3);
 
 
-Alumno alumno2 = new Alumno();
-alumno2.Nombres = "Juan";
-alumno2.ApellidoPaterno = "Lopez";
-alumno2.Matricula = "456";
-alumno2.FechaNacimiento = new DateTime(1980,02,28);
 
-lista.Add(alumno1);
-lista.Add(alumno2);
 
 foreach (Alumno alumnoEnLista in lista) 
 {
